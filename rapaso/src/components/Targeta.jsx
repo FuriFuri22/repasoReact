@@ -7,7 +7,7 @@ const Targeta = (props) => {
 
     return (
         <div className="col" style={boton}>
-            <div className=" s40 m25">
+            <div className=" ">
                 <div className="card">
                     <div className="card-image">
                         <img src={props.imagen} />
