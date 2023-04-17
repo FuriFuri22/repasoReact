@@ -1,0 +1,64 @@
+.pokeball-animation-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /*background-color: #000;  Color de fondo de la página */
+  }
+  
+  .pokeball-animation {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    animation: pokeballAnimation 1s linear; /* Define la animación de lanzamiento */
+  }
+  
+  .pokeball-top,
+  .pokeball-bottom
+   {
+    width: 100%;
+    height: 50%;
+  }
+  
+  .pokeball-top {
+    border-radius: 100%;
+    background-color: #ff1a1a; /* Color rojo */
+    border-bottom: 4px solid #000; /* Línea negra en la parte inferior */
+  }
+  
+  .pokeball-bottom {
+    border-radius: 100%;
+    background-color: #fff; /* Color blanco */
+    border-top: 4px solid #000; /* Línea negra en la parte superior */
+  }
+
+  .pokeball-top-button{
+    width: 25%;
+    height: 25%;
+    background-color: #ffffff; /* Color negro */
+    border: 0px solid #040000; /* Contorno blanco del botón */
+    border-radius: 100%; /* Borde redondeado para el botón */
+  }
+  
+  .pokeball-button {
+    width: 100%;
+    height: 100%;
+    background-color: #000000; /* Color negro */
+    border: 4px solid #040000; /* Contorno blanco del botón */
+    border-radius: 100%; /* Borde redondeado para el botón */
+  }
+  
+  @keyframes pokeballAnimation {
+    0% {
+      transform: translateX(-100vw) rotate(0); /* Inicia fuera de la pantalla */
+    }
+    50% {
+      transform: translateX(100vw) rotate(720deg); /* Gira 720 grados */
+    }
+ 
+  }
+
+ 
+  
